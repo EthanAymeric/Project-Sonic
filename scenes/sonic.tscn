@@ -15,6 +15,42 @@ region = Rect2(432, 0, 54, 54)
 atlas = ExtResource("2_35lpn")
 region = Rect2(0, 0, 54, 54)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_35lpn"]
+atlas = ExtResource("2_35lpn")
+region = Rect2(54, 162, 54, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgjo6"]
+atlas = ExtResource("2_35lpn")
+region = Rect2(270, 162, 54, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qrl6y"]
+atlas = ExtResource("2_35lpn")
+region = Rect2(108, 162, 54, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m14wf"]
+atlas = ExtResource("2_35lpn")
+region = Rect2(324, 162, 54, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6utbv"]
+atlas = ExtResource("2_35lpn")
+region = Rect2(162, 162, 54, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1appv"]
+atlas = ExtResource("2_35lpn")
+region = Rect2(378, 162, 54, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uugyd"]
+atlas = ExtResource("2_35lpn")
+region = Rect2(216, 162, 54, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tjprp"]
+atlas = ExtResource("2_35lpn")
+region = Rect2(432, 162, 54, 54)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrynr"]
+atlas = ExtResource("2_35lpn")
+region = Rect2(0, 216, 54, 54)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ba3y2"]
 atlas = ExtResource("2_35lpn")
 region = Rect2(0, 108, 54, 54)
@@ -78,6 +114,38 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_35lpn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgjo6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qrl6y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m14wf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6utbv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1appv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uugyd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tjprp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrynr")
+}],
+"loop": 1,
+"name": &"jump",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_ba3y2")
 }, {
 "duration": 1.0,
@@ -129,6 +197,7 @@ position = Vector2(-2, -21)
 sprite_frames = SubResource("SpriteFrames_gc0ix")
 animation = &"bored"
 autoplay = "idle"
+frame_progress = 0.82917154
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=5626628]
 position = Vector2(0, -15)
