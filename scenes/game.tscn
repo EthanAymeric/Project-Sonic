@@ -252,7 +252,7 @@ _data = {
 [node name="Game" type="Node2D" unique_id=1121607895]
 
 [node name="Sonic" parent="." unique_id=621268541 instance=ExtResource("1_uwrxv")]
-position = Vector2(714, -84)
+position = Vector2(714, -92)
 
 [node name="Camera2D" type="Camera2D" parent="Sonic" unique_id=627732667]
 position = Vector2(-1, 7)

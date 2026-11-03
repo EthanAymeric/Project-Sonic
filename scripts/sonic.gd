@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 const MAX_SPEED = 350.0       # La vitesse maximale que le personnage peut atteindre
 const ACCELERATION = 800.0    # La vitesse à laquelle il accélère (plus c'est haut, plus l'accélération est vive)
-const FRICTION = 7        # La vitesse à laquelle il s'arrête quand on lâche les touches
+const FRICTION = 10        # La vitesse à laquelle il s'arrête quand on lâche les touches
 const JUMP_VELOCITY = -300.0
 
 func _physics_process(delta: float) -> void:
@@ -20,7 +20,7 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = move_toward(velocity.x, direction * MAX_SPEED, ACCELERATION * delta)
 	else:
-		velocity.x = move_toward(velocity.x, 0, FRICTION)
+		velocity.x = move_toward(velocity.x, 0, FRICTION * 0.90)
 	
 
 	move_and_slide()
